@@ -5,13 +5,11 @@ const Form = props =>{
     return(
         <div className="container">
             <div className="app-container">
-                <h1 className="py-2">Weather App</h1>
                 <div>{props.error ? error() : null}</div>
                 <form onSubmit={props.loadWeather}>
                     <div className="row">
-                        <div className="col-lg-4"></div>
-                        <div className="col-lg-4">
-                            <div className="input-group" id="search-bar">
+                        <div>
+                            <div className="input-group py-4" id="search-bar">
                                 <input type="text" className="form-control" name="city" autoComplete="off" placeholder="City name" />
                                 <span className="input-group-btn">
                                     <button className="btn btn-default" type="submit" name="search-button">
@@ -19,8 +17,6 @@ const Form = props =>{
                                     </button>
                                 </span>
                             </div>
-                        </div>
-                        <div className="col-lg-4">
                         </div>
                     </div>
                 </form>

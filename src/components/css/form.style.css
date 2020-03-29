@@ -1,4 +1,5 @@
 form {
+    position: fixed;
     margin-top: 0;
     padding-left: 80px;
     padding-right: 80px;
@@ -6,14 +7,21 @@ form {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
 }
 
 .app-container{
-    margin-right: 0;
+    text-align: center;
+    position: fixed;
+}
+
+.row{
+    width: 414px;
+    margin: 0;
 }
 
 .form-control{
+    position: fixed;
     width: 414px;
 }
 
@@ -68,10 +76,10 @@ form button[name="search-button"]:hover {
     outline: none !important;
 }
 
-.btn-group{
-    top: 0;
-    margin-top: 500;
-    margin: 0;
+#buttons{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
     width: 414px;
 }
 

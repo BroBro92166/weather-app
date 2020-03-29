@@ -3,10 +3,12 @@ import './css/form.style.css';
 
 const Weather = (props) => {
     return (
-        <div className="container text-light">
-            <div className="cards pt-4">
-                <h2>{props.city}</h2>
-                <h5 className="py-4">
+        <div className="container text-light py-4" id="container">
+            <div className="cards py-4">
+                <h2>
+                    {props.city}
+                </h2>
+                <h5>
                     <i className={`wi ${props.weatherIcon} display-1`}></i> 
                 </h5>
                 {currentTemp(props.temp_current)}
@@ -15,16 +17,13 @@ const Weather = (props) => {
 
                 {weatherDescription(props.weather_description)}
 
-
-                <button className="btn btn-warning" type="submit" name="search-button">What you should wear?</button>
-
-
                 <div className="btn-group btn-group-justified" id="buttons">
                     <button className="btn btn-warning" type="submit" name="search-button">5 Day Forecast</button>
                     <button className="btn btn-warning" type="submit" name="search-button">
                         <i className="glyphicon glyphicon-volume-up"></i>
                     </button>
                 </div>
+                <button className="btn btn-warning" type="submit">What Should I Wear?</button>
             </div>
         </div>
     );
