@@ -17,7 +17,9 @@ const Weather = (props) => {
 
 
                 <button className="btn btn-warning" type="submit" name="search-button">What you should wear?</button>
-                <div className="btn-group">
+
+
+                <div className="btn-group btn-group-justified" id="buttons">
                     <button className="btn btn-warning" type="submit" name="search-button">5 Day Forecast</button>
                     <button className="btn btn-warning" type="submit" name="search-button">
                         <i className="glyphicon glyphicon-volume-up"></i>

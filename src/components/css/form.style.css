@@ -69,8 +69,10 @@ form button[name="search-button"]:hover {
 }
 
 .btn-group{
-    position: fixed;
-    bottom: 0;
+    top: 0;
+    margin-top: 500;
+    margin: 0;
+    width: 414px;
 }
 
 
