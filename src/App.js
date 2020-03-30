@@ -1,6 +1,8 @@
 import React from 'react';
 import Weather from './components/weather.component';
 import './App.css';
+import './components/css/form.style.css';
+import './components/css/weather.style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'weather-icons/css/weather-icons.css';
 import Form from './components/form.component';
@@ -151,6 +153,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+      <h1 className="py-2">Weather App</h1>
         <Form 
           loadWeather={this.getWeather}
           error={this.state.error}

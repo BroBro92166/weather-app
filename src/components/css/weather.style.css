@@ -1,0 +1,17 @@
+
+.btn-group-wrap{
+    text-align: center;
+}
+
+div.btn-group{
+    margin: 0 auto;
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+    bottom: 0;
+}
+
+#bottom-buttons{
+    float: center;
+}
+

@@ -4,8 +4,9 @@ import './css/form.style.css';
 const Form = props =>{
     return(
         <div className="container">
-            <h1 className="py-2">Weather App</h1>
-            <div>{props.error ? error() : null}</div>
+            <div>
+                {props.error ? error() : null}
+            </div>
             <form onSubmit={props.loadWeather}>
                 <div className="row">
                     <div className="input-group py-4">
