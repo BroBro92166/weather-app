@@ -4,26 +4,29 @@ import './css/form.style.css';
 const Weather = (props) => {
     return (
         <div className="container text-light py-4" id="container">
-            <div className="cards py-4">
-                <h2>
-                    {props.city}
-                </h2>
-                <h5>
-                    <i className={`wi ${props.weatherIcon} display-1`}></i> 
-                </h5>
-                {currentTemp(props.temp_current)}
-                
-                {feelslikeTemp(props.temp_feelslike)}
+            <h2 class="py-4">
+                {props.city}
+            </h2>
+            <h5>
+                <i className={`wi ${props.weatherIcon} display-1`}></i> 
+            </h5>
+            {currentTemp(props.temp_current)}
+            
+            {feelslikeTemp(props.temp_feelslike)}
 
-                {weatherDescription(props.weather_description)}
+            {weatherDescription(props.weather_description)}
 
-                <div className="btn-group btn-group-justified" id="buttons">
+            <div className="btn-group py-4">
+                <button className="btn btn-warning" type="submit">What Should I Wear?</button>
+            </div>
+
+            <div className="btn-toolbar">
+                <div className="btn-group btn-group-justified">
                     <button className="btn btn-warning" type="submit" name="search-button">5 Day Forecast</button>
                     <button className="btn btn-warning" type="submit" name="search-button">
                         <i className="glyphicon glyphicon-volume-up"></i>
                     </button>
                 </div>
-                <button className="btn btn-warning" type="submit">What Should I Wear?</button>
             </div>
         </div>
     );

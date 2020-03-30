@@ -1,86 +1,42 @@
-form {
-    position: fixed;
-    margin-top: 0;
-    padding-left: 80px;
-    padding-right: 80px;
+.App{
+    height: 736px;
     width: 414px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
-.app-container{
-    text-align: center;
-    position: fixed;
-}
-
-.row{
-    width: 414px;
-    margin: 0;
+.container, #container{
+    padding: 0 auto !important;
 }
 
 .form-control{
-    position: fixed;
     width: 414px;
 }
 
-form input[name="city"]{
-    position: relative;
+form input[name="city"],
+form input[name="city"]:focus{
     background-color: transparent;
     border: 50;
-    width: 414px;
     border-right: 0;
     border-radius: 50px;
     border-color: black;
-    align-content: center;
-}
-
-form input[name="city"]:focus {
-    border-color: black;
-    border-right: 0;
     background-color: transparent;
     box-shadow: none !important;
     outline: none !important;
-}
+    }
 
-form button[name="search-button"]{
-    background-color: transparent;
+form button[name="search-button"],
+form button[name="search-button"]:focus,
+form button[name="search-button"]:active,
+form button[name="search-button"]:hover,
+form button[name="search-button"]:active:focus:not(:disabled):not(.disabled) {
+    background-color: transparent !important;
+    border: 50;
     border-left: 0;
     border-top-right-radius: 50px;
     border-bottom-right-radius:50px ;
     border-color: black;
-}
-
-form button[name="search-button"]:focus {
-    background-color: transparent !important;
-    border-left: 0;
-    color: transparent;
     box-shadow: none !important;
     outline: none !important;
 }
-
-form button[name="search-button"]:active{
-    background-color: transparent !important;
-    border-left: 0;
-    color: transparent;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-form button[name="search-button"]:hover {
-    background-color: transparent !important;
-    border-left: 0;
-    border-color: black;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-#buttons{
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 414px;
-}
-
 

@@ -151,7 +151,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1 className="py-2">Weather App</h1>
         <Form 
           loadWeather={this.getWeather}
           error={this.state.error}
