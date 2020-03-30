@@ -4,7 +4,7 @@ import './css/form.style.css';
 const Weather = (props) => {
     return (
         <div className="container text-light py-4" id="container">
-            <h2 class="py-4">
+            <h2 className="py-4">
                 {props.city}
             </h2>
             <h5>

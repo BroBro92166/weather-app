@@ -1,6 +1,7 @@
 .App{
     height: 736px;
     width: 414px;
+    display: block;
     margin: 0 auto;
     padding: 0 auto;
 }
@@ -40,3 +41,9 @@ form button[name="search-button"]:active:focus:not(:disabled):not(.disabled) {
     outline: none !important;
 }
 
+.btn-toolbar{
+    width: 414px;
+    display: block;
+    
+    margin-left: 0;
+}
